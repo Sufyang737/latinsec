@@ -1,0 +1,6 @@
+Iconos para la section "servicios"
+
+lupa: <i class="fa-solid fa-magnifying-glass"></i>
+camion: <i class="fa-solid fa-truck"></i>
+camara: <i class="fa-solid fa-video"></i>
+seguridad: <i class="fa-solid fa-shield"></i> 
