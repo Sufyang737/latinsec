@@ -126,18 +126,52 @@ section{
 
 
 /*section1*/
-
+.gradient{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  background: linear-gradient(-45deg, #0063a5, #005994, #003152, #001321);
+  background-size: 400% 400%;
+  width: 100vw;
+  height: 100%;
+  animation: gradient 15s ease infinite;
+}
 .home{
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: auto;
   float: right;
-  background-color: transparent;
-  background-image: url('../img/IMG_6020.jpg');
-  background-size: 1944px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: none;
 }
 
+.home img{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: -500;
+  width: 85%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 #cons{
   text-align: left;
 }
@@ -229,6 +263,59 @@ section #inline_div #three_baloons .baloon .count{
 .title-contact{
   color:#ffffff;
 }
+
+
+/*Services*/
+
+#servicios_table{
+  display: grid;
+  position: relative;
+  margin: 5%;
+}
+
+.vertex_items {
+  display: grid;
+  place-items: center;
+  position: relative;
+  height: 300px;
+  width: 250px;
+  background: black;
+}
+.vertex_items:before{
+  position: absolute;
+  content: '';
+}
+.vertex_items, .vertex_items:before{
+  -webkit-clip-path: url(#hexagon-clip);
+  clip-path: url(#hexagon-clip);
+}
+.vertex_items:before {
+  top: 4px;
+  left: 4px;
+  height: calc(100% - 8px);
+  width: calc(100% - 8px);
+  background: #ffffff;
+}
+
+.vertex_items p{
+  color: black;
+  z-index: 2000;
+}
+
+#node_img{
+  place-self: center;
+  width: 750px;
+  height: 750px;
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid black;
+}
+
+
+#servicios_table #seguridad_fisica{
+
+}
+
 
 /*wave*/
 .waves-territorial{
