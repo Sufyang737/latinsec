@@ -126,6 +126,7 @@ section{
 
 
 /*section1*/
+
 .gradient{
   position: absolute;
   top: 0;
@@ -137,6 +138,7 @@ section{
   height: 100%;
   animation: gradient 15s ease infinite;
 }
+
 .home{
   position: relative;
   display: flex;
@@ -144,10 +146,10 @@ section{
   width: 100%;
   height: auto;
   float: right;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  border: none;
+  background-image: url(../img/IMG_6039.jpg);
+  background-position: center;
+  background-size: 100% 140%;
+  background-repeat: no-repeat;
 }
 
 .home img{
@@ -268,9 +270,10 @@ section #inline_div #three_baloons .baloon .count{
 /*Services*/
 
 #servicios_table{
+  height: 100vh;
   display: grid;
   position: relative;
-  margin: 5%;
+  margin: 2% 0% 0% 0%;
 }
 
 .vertex_items {
@@ -308,12 +311,36 @@ section #inline_div #three_baloons .baloon .count{
   height: 750px;
   position: absolute;
   border-radius: 50%;
+  z-index: -1000;
   border: 5px solid black;
 }
 
 
 #servicios_table #seguridad_fisica{
+  left: 50%;
+  top: -2.5%;
+  z-index: 1000%;
+  transform: translate(-50%);
+  position: absolute;
+}
 
+#servicios_table #custodia__mercaderia{
+  position: absolute;
+  left: 72.4%;
+  top: 35%;
+  transform: translate(-50%);
+}
+
+#servicios_table #seguridad_electronica{
+  left: 19.5%;
+  top: 35%;
+  position: absolute;
+}
+#servicios_table #investigacion{
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
 }
 
 
