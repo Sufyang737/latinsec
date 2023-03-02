@@ -300,9 +300,18 @@ section #inline_div #three_baloons .baloon .count{
   background: #ffffff;
 }
 
+.vertex_items svg{
+  color: #0063a5;
+  z-index: 1000;
+  width: 100px;
+  height: 100px;
+  margin-top: 30%;
+}
+
 .vertex_items p{
   color: black;
   z-index: 2000;
+  margin-bottom: 30%;
 }
 
 #node_img{
@@ -349,6 +358,14 @@ section #inline_div #three_baloons .baloon .count{
   width: 950px;
   margin-left: -14%;
   justify-content: space-between;
+}
+
+#servicios_table img{
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  transform: translateY(-10%);
+  animation: -orbitseguridadfisica 20s linear infinite;
 }
 
 
