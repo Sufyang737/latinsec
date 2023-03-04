@@ -74,3 +74,59 @@
 		left: -25px;
 	}
 }
+
+
+@media(max-width: 1735px){
+
+	#inline_div{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	#inline_div #who_we_are{
+		width: 100vw;
+		height: 50vh;
+	}
+
+	#inline_div #three_baloons{
+		display: inline-flex;
+		flex-direction: column;
+	}
+
+	#servicios_table{
+		height: 1200px;
+	}
+
+	#servicios_table #node_img{
+		border: 0;
+		animation: none;
+		width: 100%;
+
+	}
+
+	#servicios_table #node_img img{
+		display: none;
+	}
+
+	#servicios_table #node_img .vertex_items{
+		animation: none;
+		margin: 10px 0;
+	}
+
+
+	#custodia__mercaderia{
+		place-self: center;
+	}
+
+
+	#servicios_table #vertical_aligned{
+		display: grid;
+		place-items: center;
+		width: auto;
+		flex-direction: column;
+	}
+
+	
+	
+}
