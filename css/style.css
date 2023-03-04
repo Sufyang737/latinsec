@@ -232,7 +232,6 @@ section #inline_div #three_baloons{
 }
 
 section #inline_div #three_baloons .baloon{
-  max-width: 10vw;
   display:grid;
   place-items:center;
   margin: 0vh 1vw 0vh 1vw;

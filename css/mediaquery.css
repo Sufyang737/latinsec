@@ -85,13 +85,34 @@
 	}
 
 	#inline_div #who_we_are{
-		width: 100vw;
-		height: 50vh;
+		display: grid;
+		place-items: center;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	#inline_div #three_baloons{
+		display: flex;
+		justify-self: center;
+		width: 100%;
+		justify-content: center;
+		justify-items: center;
 		display: inline-flex;
 		flex-direction: column;
+	}
+
+	section #inline_div #three_baloons .baloon{
+		width: auto;
+		place-self: center;
+		margin: 20px 0;
+	}
+
+	section #inline_div #who_we_are p{
+		text-align: center;
+	}
+
+	section #inline_div #who_we_are button{
+		width: 50%;
 	}
 
 	#servicios_table{
