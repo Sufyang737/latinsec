@@ -19,9 +19,20 @@
 	    -ms-flex-preferred-size: auto;
 	    flex-basis: auto;
 	}
+
+	section #inline_div #three_baloons .baloon p:nth-child(1){
+		padding-top: 0%;
+	}
+
+	section #inline_div #three_baloons .baloon .count{
+		margin: 0%;
+	}
 }
 
 @media screen and (max-height: 450px) {
+	html{
+		overflow-x: hidden;
+	}
 	.overlay a {
 	  font-size: 20px;
 	}
@@ -30,15 +41,55 @@
 	  top: 15px;
 	  right: 35px;
 	}
+
+	section #inline_div #three_baloons .baloon p:nth-child(1){
+		padding-top: 0%;
+	}
+
+	section #inline_div #three_baloons .baloon .count{
+		margin: 0%;
+	}
+
+	.parrafo-terri{
+		font-size: 5px;
+	}
+
   }
   
   @media only screen and (max-width: 800px) {
+	.home{
+		height: auto;
+  		max-width: 100%;
+		background-image: url(../img/IMG_6039.jpg);
+		background-size: contain;
+	}
+
+	section #cons p{
+		font-size: large;
+	}
+
+	section #cons a{
+		font-size: small;
+	}
+
 	.nav__links,
 	.cta {
 	  display: none;
 	}
 	.menu {
 	  display: initial;
+	}
+
+	section #inline_div #three_baloons .baloon p:nth-child(1){
+		padding-top: 0%;
+	}
+
+	section #inline_div #three_baloons .baloon .count{
+		margin: 0;
+	}
+
+	.parrafo-terri{
+		font-size: 20px;
 	}
   }
   
@@ -73,10 +124,18 @@
 		bottom: -25px;
 		left: -25px;
 	}
+
+	section #inline_div #three_baloons .baloon p:nth-child(1){
+		padding-top: 0%;
+	}
+
+	section #inline_div #three_baloons .baloon .count{
+		margin: 0;
+	}
 }
 
 
-@media(max-width: 1735px){
+@media(max-width: 1200px){
 
 	#inline_div{
 		display: flex;
@@ -106,6 +165,11 @@
 		width: auto;
 		place-self: center;
 		margin: 20px 0;
+	}
+
+	.baloon .count{
+		padding: 0;
+		margin: 0;
 	}
 
 	section #inline_div #who_we_are p{
@@ -151,5 +215,39 @@
 	}
 
 	
+
 	
+	
+}
+
+
+@media(min-width: 1201px) and (max-width: 1750px){
+
+	
+	#inline_div #who_we_are{
+		display: grid;
+		place-items: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	section #inline_div #who_we_are p{
+		min-width: 300px;
+		text-align: center;
+	}
+
+	section #inline_div #who_we_are button{
+		width: 50%;
+	}
+
+	section #inline_div #three_baloons .baloon p:nth-child(1){
+		padding-top: 30%;
+	}
+
+	section #inline_div #three_baloons .baloon .count{
+		margin-bottom: 90%;
+	}
+	
+
+
 }

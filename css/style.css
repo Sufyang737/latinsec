@@ -8,6 +8,10 @@
   width: 0px;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 *{
   padding:0;
   margin: 0;
@@ -141,12 +145,11 @@ section{
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
   height: auto;
-  float: right;
+  min-width: 100%;
   background-image: url(../img/IMG_6039.jpg);
   background-position: center;
-  background-size: 100% 140%;
+  background-size: 80% 140%;
   background-repeat: no-repeat;
 }
 
@@ -186,7 +189,7 @@ section #cons p{
 
 section #cons a{
   text-decoration:none;
-  margin: 15vh 10vw 0vh auto;
+  margin: 15vh 10vw 0vh 5vw;
   padding: 1vh 1vw 1vh 1vw;
   font-size: 30px;
   background-color: #0063a5;
@@ -239,12 +242,14 @@ section #inline_div #three_baloons .baloon{
   text-align:center;
 }
 section #inline_div #three_baloons .baloon p:nth-child(1){
+  padding-top: 30%;
   font-size: 30px;
   margin: 0px;
 }
 
 section #inline_div #three_baloons .baloon .count{
   display: grid;
+  margin-bottom: 30%;
   place-items: center;
   width: 200px;
   height: 200px;
@@ -706,7 +711,7 @@ section #inline_div #three_baloons .baloon .count{
   transform: translate(-50%, -50%); 
 }
 .footer-20192 .footer-logo {
-  color: red);
+  color: red;
   font-family: 'Zen Tokyo Zoo';
   font-size: 60px;
   text-transform: uppercase;
