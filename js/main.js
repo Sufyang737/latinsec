@@ -1,3 +1,69 @@
+window.sr = ScrollReveal();
+
+sr.reveal('#who_we_are', {
+	duration: 2000,
+	origin: 'right',
+	distance: '-400px'
+});
+
+sr.reveal('#three_baloons', {
+	duration: 2000,
+	origin: 'left',
+	distance: '-500px'
+});
+
+sr.reveal('.info-contacto', {
+	duration: 1000,
+	origin: 'top',
+	distance: '-700px'
+});
+
+sr.reveal('.services', {
+	duration: 1000,
+	origin: 'top',
+	distance: '-400px'
+});
+
+sr.reveal('#seguridad_fisica', {
+	duration: 2000,
+	origin: 'left',
+	distance: '-700px'
+});
+
+sr.reveal('#custodia__mercaderia', {
+	duration: 2000,
+	origin: 'right',
+	distance: '-700px'
+});
+
+sr.reveal('#seguridad_electronica', {
+	duration: 2000,
+	origin: 'left',
+	distance: '-700px'
+});
+
+sr.reveal('#investigacion', {
+	duration: 2000,
+	origin: 'right',
+	distance: '-700px'
+});
+
+sr.reveal('.title-terri', {
+	duration: 2000,
+	origin: 'bottom',
+	distance: '-700px'
+});
+
+
+sr.reveal('.parrafo-terri', {
+	duration: 2600,
+	origin: 'left',
+	distance: '-150px'
+});
+
+
+
+
 const doc = document;
 const menuOpen = doc.querySelector(".menu");
 const menuClose = doc.querySelector(".close");
