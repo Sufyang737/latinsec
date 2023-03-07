@@ -50,9 +50,58 @@
 		margin: 0%;
 	}
 
-	.parrafo-terri{
-		font-size: 5px;
+	#servicios_table{
+		height: auto;
+		width: 100%;
+		display: grid;
+		position: relative;
+		margin: 2% 0% 0% 0%;
 	}
+
+	#node_img{
+		width: 500px;
+		height: 500px;
+	}
+
+	.vertex_items {
+		height: 160px;
+		width: 150px;
+		background: black;
+	}
+
+	.vertex_items:before {
+		top: 5px;
+		left: 5px;
+		height: calc(100% - 10px);
+		width: calc(100% - 10px);
+		background: #ffffff;
+	}
+
+	.vertex_items svg{
+		color: #0063a5;
+		z-index: 1000;
+		width: 50px;
+		height: 50px;
+		margin-top: 30%;
+	}
+
+	.vertex_items p{
+		color: black;
+		z-index: 2000;
+		font-size: small;
+		text-align: center;
+		margin-bottom: 30%;
+	}
+
+	#servicios_table #vertical_aligned{
+		display: inline-flex;
+		width: 650px;
+		align-content: center;
+		align-items: center;
+		margin-left: 0%;
+		justify-content: space-between;
+	}
+
 
   }
   
