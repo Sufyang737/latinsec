@@ -4,3 +4,17 @@ lupa: <i class="fa-solid fa-magnifying-glass"></i>
 camion: <i class="fa-solid fa-truck"></i>
 camara: <i class="fa-solid fa-video"></i>
 seguridad: <i class="fa-solid fa-shield"></i> 
+
+* RESPONSIVE *
+ 
+section "home", tener en cuetna la img que no se pixelee mucho y que no se agrande tanto, achicar un poco el texto y que este todo en el lado derecho por el pratron "f"
+ 
+section "about", antes de que quede todo abajo de uno, que quede un poco mas chico.
+
+
+ 
+section "servicios" en el diseño movil esta bien pero q antes del diseño movil siga apareciendo el circulo con el efecto de las card por asi decirlo rotando, achicando el circulo y las card.
+
+
+section "cobertura" achicar un poco mas el tamañano de la letra. 
+ 
