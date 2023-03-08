@@ -148,9 +148,11 @@ section{
   height: auto;
   min-width: 100%;
   background-image: url(../img/IMG_6039.jpg);
-  background-position: center;
-  background-size: 80% 140%;
+  background-position: 50% 45%;
+  background-size: 80% auto;
   background-repeat: no-repeat;
+  height: 100%;
+  max-width: 100%;
 }
 
 .home img{
