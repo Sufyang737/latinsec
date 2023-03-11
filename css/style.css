@@ -38,7 +38,7 @@ header {
 .overlay__content a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  color: #000000;
+  color: hsl(0, 0%, 0%);
   text-decoration: none;
 }
 
@@ -70,7 +70,7 @@ header {
 }
 
 .cta:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+  background-color: #0063a5;
 }
 
 
@@ -103,6 +103,7 @@ header {
   justify-content: center;
 }
 
+
 .overlay a {
   padding: 15px;
   font-size: 36px;
@@ -112,7 +113,7 @@ header {
 
 .overlay a:hover,
 .overlay a:focus {
-  color: #0088a9;
+  color: #0063a5;
 }
 .overlay .close {
   position: absolute;
@@ -183,9 +184,9 @@ section{
 
 section #cons p{
   width: 35%;
-  text-align:right;
+  text-align:left;
   font-size: 70px;
-  margin: 10vh 10vw 0vh auto;
+  margin-left: 30px;
   color:white;
 }
 
@@ -222,7 +223,7 @@ section #inline_div #who_we_are p:nth-child(2){
   margin: 0vh 0vw 5vh 0vw;
 }
 
-section #inline_div #who_we_are button{
+section #inline_div #who_we_are .btn-info{
   width: 8vw;
   background-color: #0063a5;
   color: white;
@@ -266,98 +267,60 @@ section #inline_div #three_baloons .baloon .count{
   background-color: #0063a5;
 }
 
-.custom-btn {
-  width: 150px;
-  height: 50px;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px 25px;
 
-  font-weight: 500;
+.btn-info {
+  border: none;
+  display: block;
+  position: relative;
+  padding: 0.7em 2.4em;
+  font-size: 18px;
   background: transparent;
   cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
+  user-select: none;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  font-family: inherit;
+  font-weight: 500;
 }
 
-.btn-7 {
-  background: linear-gradient(0deg, rgb(0, 0, 0),rgb(0, 0, 0)) 100%);
-    line-height: 42px;
-    padding: 0;
-    border: none;
-  }
-  .btn-7 span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  .btn-7:before,
-  .btn-7:after {
-    position: absolute;
-    content: "";
-    right: 0;
-    bottom: 0;
-    background: rgb(255, 0, 0);
-    box-shadow:
-     -7px -7px 20px 0px rgba(255,255,255,.9),
-     -4px -4px 5px 0px rgba(255,255,255,.9),
-     7px 7px 20px 0px rgba(0,0,0,.2),
-     4px 4px 5px 0px rgba(0,0,0,.3);
-    transition: all 0.3s ease;
-  }
-  .btn-7:before{
-     height: 0%;
-     width: 2px;
-  }
-  .btn-7:after {
-    width: 0%;
-    height: 2px;
-  }
-  .btn-7:hover{
-    color: rgb(255, 255, 255);
-    background: transparent;
-  }
-  .btn-7:hover:before {
-    height: 100%;
-  }
-  .btn-7:hover:after {
-    width: 100%;
-  }
-  .btn-7 span:before,
-  .btn-7 span:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    background: rgb(255, 0, 0);
-    box-shadow:
-     -7px -7px 20px 0px rgba(255,255,255,.9),
-     -4px -4px 5px 0px rgba(255,255,255,.9),
-     7px 7px 20px 0px rgba(0,0,0,.2),
-     4px 4px 5px 0px rgba(0,0,0,.3);
-    transition: all 0.3s ease;
-  }
-  .btn-7 span:before {
-    width: 2px;
-    height: 0%;
-  }
-  .btn-7 span:after {
-    height: 2px;
-    width: 0%;
-  }
-  .btn-7 span:hover:before {
-    height: 100%;
-  }
-  .btn-7 span:hover:after {
-    width: 100%;
-  }
-  
+.btn-info span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 4px solid rgb(255, 255, 255);
+}
+
+.btn-info span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: #0063a5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s;
+}
+
+.btn-info:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: #ffffff;
+}
+
+.btn-info:hover {
+  color: rgb(0, 0, 0);
+}
+
+.btn-info:active span::before {
+  background: #ffffff;
+}
 
 .title-contact{
   color:#ffffff;

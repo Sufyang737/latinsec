@@ -37,9 +37,9 @@
 	  font-size: 20px;
 	}
 	.overlay .close {
-	  font-size: 40px;
-	  top: 15px;
-	  right: 35px;
+	  	font-size: 40px;
+	  	top: 15px;
+	  	right: 35px;
 	}
 
 	section #inline_div #three_baloons .baloon p:nth-child(1){
@@ -126,7 +126,7 @@
 	}
 
 	section #cons p{
-		font-size: large;
+		font-size: 20px;
 	}
 
 	section #cons a{
