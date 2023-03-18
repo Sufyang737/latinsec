@@ -1,5 +1,11 @@
 window.sr = ScrollReveal();
 
+sr.reveal('#titleseg',{
+	duration: 2000,
+	origin: 'right',
+	distance: '-500px'
+});
+
 sr.reveal('#who_we_are', {
 	duration: 2000,
 	origin: 'right',
@@ -62,20 +68,6 @@ sr.reveal('.parrafo-terri', {
 });
 
 
-
-
-const doc = document;
-const menuOpen = doc.querySelector(".menu");
-const menuClose = doc.querySelector(".close");
-const overlay = doc.querySelector(".overlay");
-
-menuOpen.addEventListener("click", () => {
-  overlay.classList.add("overlay--active");
-});
-
-menuClose.addEventListener("click", () => {
-  overlay.classList.remove("overlay--active");
-});
 
 function test(){
 	var tabsNewAnim = $('#navbarSupportedContent');
