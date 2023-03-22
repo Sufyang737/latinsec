@@ -21,15 +21,6 @@ html{
 }
 
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
-  background-color: #ffffff;
-}
-
-
 header{
   background: #ffffff;
   position: fixed;
@@ -40,9 +31,64 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 23px  10%;
+  padding: 20px  10%;
   transition: all .38s ease;
 }
+
+.btn-contacto {
+  z-index: 10000;
+  font-family: inherit;
+  font-size: 20px;
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.btn-contacto span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-contacto svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-contacto:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.btn-contacto:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.btn-contacto:hover span {
+  transform: translateX(5em);
+}
+
+.btn-contacto:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
 
 
 .logo{
@@ -87,7 +133,7 @@ header{
 
 #menu-icon{
   font-size: 35px;
-  color: var(--second-color);
+  color: black;
   cursor: pointer;
   z-index: 10001;
   display: none;
@@ -312,7 +358,7 @@ section #inline_div #three_baloons .baloon .count{
   position: relative;
   height: 300px;
   width: 250px;
-  background: black;
+  background: red;
 }
 .vertex_items:before{
   position: absolute;
@@ -331,7 +377,7 @@ section #inline_div #three_baloons .baloon .count{
 }
 
 .vertex_items svg{
-  color: #0063a5;
+  color: #f70000;
   z-index: 1000;
   width: 100px;
   height: 100px;
@@ -339,7 +385,7 @@ section #inline_div #three_baloons .baloon .count{
 }
 
 .vertex_items p{
-  color: black;
+  color: #0063a5;
   z-index: 2000;
   margin-bottom: 30%;
 }
@@ -355,7 +401,7 @@ section #inline_div #three_baloons .baloon .count{
   flex-direction: column;
   border-radius: 50%;
   z-index: -1000;
-  border: 5px solid black;
+  border: 5px solid #0063a5;
   animation: orbit 20s linear infinite;
 }
 

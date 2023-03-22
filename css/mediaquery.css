@@ -1,3 +1,50 @@
+@media (max-width: 1280px) {
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px){
+    #menu-icon{
+        display: block;
+        transition: 1s;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 100%;
+        height: 40vh;
+        background-color:  rgb(255, 255, 255);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: all .50s ease;
+    }
+
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+
+    .navbar a:hover{
+        transform: translateY(5px);
+    }
+
+
+    .navbar.open{
+        right: 0%;
+        transition: .50s;
+    }
+}
 
 @media(min-width: 992px){
 	.navbar-expand-custom {

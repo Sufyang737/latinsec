@@ -1,5 +1,17 @@
 window.sr = ScrollReveal();
 
+sr.reveal('#titleaseso',{
+	duration: 2000,
+	origin: 'right',
+	distance: '-500px'
+});
+
+sr.reveal('#li1',{
+	duration: 2000,
+	origin: 'right',
+	distance: '-500px'
+});
+
 sr.reveal('#titleseg',{
 	duration: 2000,
 	origin: 'right',
@@ -109,6 +121,13 @@ $(".navbar-toggler").click(function(){
 	setTimeout(function(){ test(); });
 });
 
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+  menu.classList.toggle('bx-x');
+  navbar.classList.toggle('open');
+}
 
 
 // --------------add active class-on another-page move----------
