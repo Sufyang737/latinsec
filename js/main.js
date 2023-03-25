@@ -6,17 +6,36 @@ sr.reveal('#titleaseso',{
 	distance: '-500px'
 });
 
+sr.reveal('#titleaseso1',{
+	duration: 2000,
+	origin: 'right',
+	distance: '-500px'
+});
+
+
+sr.reveal('#titleaseso2',{
+	duration: 2000,
+	origin: 'right',
+	distance: '-500px'
+});
+
+
+sr.reveal('#parrafosec',{
+	duration: 2000,
+	origin: 'left',
+	distance: '-500px'
+});
+
+
+
+
 sr.reveal('#li1',{
 	duration: 2000,
 	origin: 'right',
 	distance: '-500px'
 });
 
-sr.reveal('#titleseg',{
-	duration: 2000,
-	origin: 'right',
-	distance: '-500px'
-});
+
 
 sr.reveal('#who_we_are', {
 	duration: 2000,
