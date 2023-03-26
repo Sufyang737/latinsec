@@ -20,6 +20,42 @@ html{
   box-sizing:border-box;
 }
 
+#bottone1 a{
+  text-decoration: none;
+  color: white;
+}
+
+#bottone1 {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  top: 89%;
+  left:10px;
+  z-index: 1000;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 9px;
+  background: #0063a5;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  z-index:100000;
+  color: white;
+ }
+ 
+ #bottone1:hover {
+  box-shadow: 7px 5px 56px -14px #000000;
+ }
+ 
+ #bottone1:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #000000;
+ }
 
 header{
   background: #ffffff;
@@ -147,7 +183,7 @@ section{
 section #cons p{
   width: 35%;
   text-align:left;
-  font-size: 70px;
+  font-size: 50px;
   margin-left: 30px;
   color:white;
 }
