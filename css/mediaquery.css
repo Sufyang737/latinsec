@@ -76,10 +76,7 @@
 	}
 }
 
-@media screen and (max-height: 450px) {
-	.logo{
-		width:10px;
-	}
+@media screen and (max-width: 450px) {
 	html{
 		overflow-x: hidden;
 	}
@@ -114,9 +111,8 @@
 	}
 
 	.vertex_items {
-		height: 175px;
-		width: 150px;
-		background: black;
+		height: 200px;
+		width: 180px;
 	}
 
 	.vertex_items:before {
@@ -136,7 +132,6 @@
 	}
 
 	.vertex_items p{
-		color: black;
 		z-index: 2000;
 		font-size: small;
 		text-align: center;
@@ -175,8 +170,8 @@
 		background-size: contain;
 	}
 
-	section #cons p{
-		font-size: 20px;
+	#cons {
+		font-size: 10px;
 	}
 
 	section #cons a{
@@ -389,7 +384,11 @@
   }
   
   @media screen and (max-width: 569px) {
-  
+
+	.logo{
+		width: 200px;
+	}
+
 	.direct-contact-container, .form-wrapper {
 	  float: none;
 	  margin: 0 auto;
