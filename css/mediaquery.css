@@ -163,20 +163,6 @@
   }
   
   @media only screen and (max-width: 800px) {
-	.home{
-		height: auto;
-  		max-width: 100%;
-		background-image: url(../img/IMG_6039.jpg);
-		background-size: contain;
-	}
-
-	#cons {
-		font-size: 10px;
-	}
-
-	section #cons a{
-		font-size: small;
-	}
 
 	.nav__links,
 	.cta {
@@ -356,6 +342,24 @@
 	
 
 
+}
+
+@media (max-width: 880px){
+    .home{
+        margin-top: 5px;
+        grid-template-columns: 1fr;
+        height: 114vh;
+    }
+
+    .home-img{
+        text-align: center;
+    }
+
+    .home-img img{
+        height: auto;
+        max-width: 500px;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 850px) {
