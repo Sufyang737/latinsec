@@ -1,3 +1,9 @@
+window.addEventListener("scroll", function(){
+	var header = document.querySelector("header");
+	var menu = document.querySelector("#menu-icon");
+	header.classList.toggle("abajo", window.scrollY>50);
+	menu.classList.toggle("abajo", window.scrollY>50);
+})
 window.sr = ScrollReveal();
 
 sr.reveal('#titleaseso',{
@@ -32,6 +38,30 @@ sr.reveal('#parrafosec',{
 sr.reveal('#li1',{
 	duration: 2000,
 	origin: 'right',
+	distance: '-500px'
+});
+
+sr.reveal('#li1',{
+	duration: 2000,
+	origin: 'right',
+	distance: '-500px'
+});
+
+sr.reveal('#li2',{
+	duration: 2000,
+	origin: 'left',
+	distance: '-500px'
+});
+
+sr.reveal('#li3',{
+	duration: 2000,
+	origin: 'right',
+	distance: '-500px'
+});
+
+sr.reveal('#li4',{
+	duration: 2000,
+	origin: 'left',
 	distance: '-500px'
 });
 
@@ -149,7 +179,6 @@ menu.onclick = () =>{
 }
 
 
-// --------------add active class-on another-page move----------
 jQuery(document).ready(function($){
 	// Get current path and find target link
 	var path = window.location.pathname.split("/").pop();

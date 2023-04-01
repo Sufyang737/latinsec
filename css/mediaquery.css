@@ -21,7 +21,8 @@
         right: -100%;
         width: 100%;
         height: 40vh;
-        background-color:  rgb(255, 255, 255);
+        background-color:  #02010a;
+		color:rgb(255, 255, 255);
         display:flex;
         flex-direction: column;
         justify-content: center;
