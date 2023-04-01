@@ -4,7 +4,18 @@
         transition: .2s;
     }
 
+
     .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+	header.abajo{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+
+
+    .navbar a.abajo{
         padding: 5px 0;
         margin: 0px 20px;
     }
@@ -391,8 +402,10 @@
   @media screen and (max-width: 569px) {
 
 	.logo{
-		width: 200px;
+		width: 180px;
 	}
+
+	
 
 	.direct-contact-container, .form-wrapper {
 	  float: none;

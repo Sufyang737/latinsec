@@ -826,8 +826,7 @@ hr {
   opacity: .4;
   position: absolute;
   bottom: -50;
-  
-  animation: burbujas 3s linear infinite ;
+  animation: burbujas 1s linear infinite ;
 }
 
 .burbuja:nth-child(1){

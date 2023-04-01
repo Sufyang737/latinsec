@@ -6,6 +6,30 @@ window.addEventListener("scroll", function(){
 })
 window.sr = ScrollReveal();
 
+sr.reveal('.clietes', {
+	duration: 2000,
+	origin: 'top',
+	distance: '-300px'
+});
+
+sr.reveal('.animation_footer_right',{
+	duration: 2000,
+	origin: 'left',
+	distance: '-500px'
+});
+
+sr.reveal('.animation_footer', {
+	duration: 2500,
+	origin: 'top',
+});
+
+sr.reveal('.animationleft', {
+	duration: 2000,
+	origin: 'right',
+	distance: '-500px'
+});
+
+
 sr.reveal('#titleaseso',{
 	duration: 2000,
 	origin: 'right',
