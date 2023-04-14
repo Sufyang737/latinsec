@@ -23,12 +23,18 @@ sr.reveal('.animation_footer', {
 	origin: 'top',
 });
 
-sr.reveal('.animationleft', {
+sr.reveal('.animationleft',{
 	duration: 2000,
 	origin: 'right',
 	distance: '-500px'
 });
 
+
+sr.reveal('#titleseg',{
+	duration: 2000,
+	origin: 'right',
+	distance: '-500px'
+});
 
 sr.reveal('#titleaseso',{
 	duration: 2000,
@@ -49,6 +55,12 @@ sr.reveal('#titleaseso2',{
 	distance: '-500px'
 });
 
+
+sr.reveal('#parrafosec',{
+	duration: 2000,
+	origin: 'left',
+	distance: '-500px'
+});
 
 sr.reveal('#parrafosec',{
 	duration: 2000,
