@@ -1,8 +1,8 @@
 window.addEventListener("scroll", function(){
 	var header = document.querySelector("header");
 	var menu = document.querySelector("#menu-icon");
-	header.classList.toggle("abajo", window.scrollY>50);
-	menu.classList.toggle("abajo", window.scrollY>50);
+	header.classList.toggle("abajo", window.scrollY>570);
+	menu.classList.toggle("abajo", window.scrollY>570);
 })
 window.sr = ScrollReveal();
 

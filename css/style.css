@@ -302,7 +302,7 @@ section #inline_div #three_baloons .baloon .count{
   position: relative;
   height: 300px;
   width: 250px;
-  background: red;
+  background: #0063a5;
 }
 .vertex_items:before{
   position: absolute;
