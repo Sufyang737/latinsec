@@ -4,8 +4,8 @@ window.addEventListener("scroll", function(){
 	header.classList.toggle("abajo", window.scrollY>570);
 	menu.classList.toggle("abajo", window.scrollY>570);
 })
-window.sr = ScrollReveal();
 
+window.sr = ScrollReveal();
 sr.reveal('.clietes', {
 	duration: 2000,
 	origin: 'top',
@@ -68,9 +68,6 @@ sr.reveal('#parrafosec',{
 	distance: '-500px'
 });
 
-
-
-
 sr.reveal('#li1',{
 	duration: 2000,
 	origin: 'right',
@@ -100,8 +97,6 @@ sr.reveal('#li4',{
 	origin: 'left',
 	distance: '-500px'
 });
-
-
 
 sr.reveal('#who_we_are', {
 	duration: 2000,

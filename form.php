@@ -1,40 +1,16 @@
 <?php
-if($_SERVER['REQUEST_METHOD'] != 'POST' ){
-    header("Location: form.html" );
-}
+    $nombre = $_POST['nombre'];
+    $mensaje = $_POST['mensaje'];
+    $email = $_POST['emial'];
+    $telefono = $_POST['telephonelaceholder'];
 
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/Exception.php';
+    $mensaje = "Estem mensaje fue enviado por:" .$nombre;
+    $mensaje .= "Su email es:" .$email;
+    $mensaje .= "Su telefono es:" .$telefono;
+    $mensaje .= "Mensaje:" . $_POST['mensaje'];
 
-use PHPMailer\PHPMailer\PHPMailer;
-
-
-$tiempo = 1;
-$url = 'form.html';
-$nombre = $_POST['nombre'];
-$email = $_POST['email'];
-$asunto = $_POST['subject'];
-$mensaje = $_POST['mensaje'];
-$numero = $_POST['telephone'];
-
-
-
-
-$body = <<<HTML
-    <h1>Contacto desde la web</h1>
-    <p>De: $nombre  / $email / telefono: $numero</p>
-    <h2>Mensaje</h2>
-    $mensaje
-HTML;
-
-$mailer = new PHPMailer();
-$mailer->setFrom( $email, $nombre, $numero );
-$mailer->addAddress('consultaswebtech@web-t.tech','Sitio web');
-$mailer->Subject = "Mensaje web: $asunto";
-$mailer->msgHTML($body);
-$mailer->AltBody = strip_tags($body);
-$mailer->CharSet = 'UTF-8';
-
-
-header("refresh: $tiempo; url=$url");
-$rta = $mailer->send( );
+    $para = 'consultaswebtech@web-t.tech';
+    $asunto = 'Enviado desde la web de latinsec';
+    mail($para, $asunto, utf8_decode($mensaje), $header);
+    header('Location:index.html')
+?>
